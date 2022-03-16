@@ -144,12 +144,42 @@ img {
     border-bottom: var(--primary-color) 4px solid;
 }
 
+#tab-1-content .tab-1-content-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    /* gap: 2rem; */
+    justify-content: center;
+    align-items: center;
+}
+
 /* * Container */
 .container {
     max-width: 70%;
     margin: auto;
     overflow: hidden;
     padding: 0 2rem;
+}
+
+/* Text Styles */
+.text-xl {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.text-lg {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-dark {
+    color: #999;
 }
 
 /* * Button */
