@@ -144,6 +144,14 @@ img {
     border-bottom: var(--primary-color) 4px solid;
 }
 
+/* * Tab Content */
+
+.tab-content{
+    padding: 3rem 0;
+    background-color: #000;
+    color: white;
+}
+
 #tab-1-content .tab-1-content-inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -165,13 +173,11 @@ img {
 .text-xl {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: white;
 }
 
 .text-lg {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: white;
 }
 
 .text-center {
