@@ -1,7 +1,9 @@
+
 :root {
     --primary-color: #e50914;
     --dark-color: #141414;
     --light-color: #f4f4f4;
+    --mobile-overlay-color: #1a1818bf;
 }
 
 * {
@@ -159,6 +161,7 @@ img {
     display: none;
 }
 
+/* to show tab content */
 .show {
     display: block !important;
 }
@@ -190,6 +193,12 @@ img {
     text-align: center;
 }
 
+.table_wrapper{
+    /* display: block; */
+    overflow-x: auto;
+    /* white-space: nowrap; */
+}
+
 .table {
     width: 100%;
     margin-top: 2rem;
@@ -200,6 +209,7 @@ img {
 .table thead th {
     text-transform: uppercase;
     padding: 0.8rem;
+    color: white;
 }
 
 .table tbody tr td {
@@ -271,7 +281,7 @@ img {
     text-align: center;
 }
 
-.text-dark {
+.text-grey-dark {
     color: #999;
 }
 
@@ -313,7 +323,7 @@ img {
     text-transform: uppercase;
 }
 
-.btn-icon{
+.btn-icon {
     margin-left: 1rem;
 }
 
@@ -382,4 +392,78 @@ img {
     #tab-2-content .tab-2-content-bottom {
         grid-template-columns: 1fr;
     }
+}
+
+@media(max-width:576px) {
+
+    .showcase {
+        height: 70vh;
+    }
+
+    .showcase::after {
+        box-shadow: inset 80px 80px 250px var(--mobile-overlay-color), inset -80px -80px 250px var(--mobile-overlay-color)
+    }
+
+    .hide-sm {
+        display: none;
+    }
+
+    .showcase-top img {
+        top: 30%;
+        left: 5%;
+        transform: translate(0);
+        width: 8rem;
+    }
+    
+    .showcase-top a {
+        transform: translate(-20%, -50%);
+    }
+
+    .showcase-content h1 {
+        font-size: 2.7rem;
+        line-height: 1;
+    }
+
+    .showcase-content p {
+        font-size: 1rem;
+        letter-spacing: 0.227rem;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .footer .footer-cols {
+        gap: 0;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .btn {
+        margin: 0;
+    }
+
+    .btn-xl {
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 1rem 1.2rem;
+    }
+
+    /* * Custom icon size for smaller devices */
+    .icon-2x {
+        font-size: 2rem !important;
+    }
+
+    .text-xl {
+        font-size: 1.3rem;
+    }
+
+    .text-lg {
+        font-size: 1.15rem;
+    }
+
+    .text-md {
+        font-size: 1.1rem;
+    }
+
 }
